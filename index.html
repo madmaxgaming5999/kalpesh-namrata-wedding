@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>शुभ विवाह - कल्पेश &amp; नम्रता</title>
+<meta property="og:title" content="शुभ विवाह - कल्पेश &amp; नम्रता">
+<meta property="og:description" content="शुक्रवार दि. १८-१२-२०२६ दुपारी २.५३ वाजता | अनुसया लॉन्स व मंगल कार्यालय, इगतपुरी, नाशिक">
+<meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;600;700&family=Playfair+Display:ital,wght@1,400&display=swap" rel="stylesheet">
+<style>
+:root{--m:#3d0015;--m2:#5c0022;--m3:#7a0030;--g:#c9a84c;--gl:#e8c97a;--gp:#f5e6b8}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--m);color:var(--gp);font-family:'Noto Serif Devanagari',serif;overflow-x:hidden;text-align:center}
+#petals{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.petal{position:absolute;top:-40px;background:radial-gradient(circle at 40% 40%,#e8c97a,#c9a84c88);border-radius:50% 0 50% 0;animation:fall linear infinite}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+@keyframes up{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+@keyframes shim{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
+@keyframes pulse{50%{transform:scale(1.1)}}
+.hero{position:relative;z-index:1;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px 16px}
+.frame{border:2px solid var(--g);padding:36px 22px;max-width:680px;width:100%;box-shadow:0 0 0 5px var(--m2),0 0 0 7px var(--g),0 0 50px #c9a84c33 inset;animation:up 1.2s ease both}
+.om{font-size:3rem;animation:pulse 3s ease-in-out infinite}
+.fi{opacity:0;animation:up .8s ease both}
+.d1{animation-delay:.3s}.d2{animation-delay:.6s}.d3{animation-delay:.9s}.d4{animation-delay:1.2s}
+.bless{font-size:clamp(.95rem,2.8vw,1.05rem);color:var(--gl);line-height:2;margin:6px 0 10px}
+.div{display:flex;align-items:center;gap:10px;margin:14px auto;max-width:360px;color:var(--g)}
+.div i{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--g),transparent)}
+.nm{display:block;font-weight:700;font-size:clamp(2.6rem,9vw,3.8rem);color:var(--gl);text-shadow:0 2px 20px #c9a84c88;line-height:1.25}
+.fam{font-size:clamp(.92rem,2.8vw,1.05rem);line-height:2.1;margin-top:10px}
+.sv{font-weight:700;font-size:clamp(2.4rem,8vw,3.6rem);background:linear-gradient(135deg,#f5e6b8,#c9a84c,#f5e6b8);background-size:200%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shim 3s ease-in-out infinite;margin:6px 0}
+section{position:relative;z-index:1;padding:36px 16px}
+.card{max-width:700px;margin:0 auto;background:linear-gradient(135deg,#5c002288,#3d001566);border:1px solid var(--g);padding:34px 22px;box-shadow:0 8px 40px #00000055;opacity:0;transform:translateY(30px);transition:opacity .7s,transform .7s}
+.card.on{opacity:1;transform:none}
+.ttl{font-size:clamp(1.3rem,4vw,1.65rem);color:var(--gl);font-weight:600;margin-bottom:16px}
+.ttl::before,.ttl::after{content:' ✦ ';color:var(--g);font-size:.85rem}
+.txt{font-size:clamp(.98rem,2.8vw,1.12rem);line-height:2.2}
+.txt b,.ev b{color:var(--gl)}
+.shl{font-size:clamp(.9rem,2.6vw,1rem);line-height:2.1;color:var(--gl);margin-top:18px;padding-top:16px;border-top:1px solid #c9a84c55}
+.cd{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cb{background:linear-gradient(135deg,var(--m3),var(--m2));border:1px solid var(--g);padding:16px 14px;min-width:72px}
+.cb span{display:block;font:700 clamp(2rem,7vw,2.8rem)/1 'Playfair Display',serif;color:var(--gl)}
+.cb small{font-size:.78rem;color:var(--g);letter-spacing:1px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.ev{background:linear-gradient(135deg,#7a003033,#3d001566);border:1px solid #c9a84c66;padding:22px 14px;font-size:clamp(.92rem,2.6vw,1.05rem);line-height:2.1;transition:transform .3s}
+.ev:hover{transform:translateY(-4px)}
+.ev h3{font-size:clamp(1rem,3vw,1.15rem);color:var(--gl);margin:6px 0 8px}
+.ic{font-size:2.2rem}
+.tip{margin-top:20px;font-size:clamp(.92rem,2.6vw,1.02rem);line-height:2;color:var(--gl)}
+.vn{font-size:clamp(1.1rem,3.2vw,1.3rem);color:var(--gl);font-weight:600;margin:8px 0}
+.btn{display:inline-block;margin:20px 6px 0;background:linear-gradient(135deg,var(--g),var(--gl));color:var(--m);font:700 1rem 'Noto Serif Devanagari',serif;padding:13px 28px;text-decoration:none;box-shadow:0 4px 16px #c9a84c44}
+.host{font-size:clamp(1.02rem,3vw,1.2rem);line-height:2.2;color:var(--gl)}
+.host a{color:var(--gp);text-decoration:none;border-bottom:1px dotted var(--g);font-size:.92em}
+@media(max-width:420px){.frame{padding:28px 12px}.grid{grid-template-columns:1fr}.cb{min-width:60px;padding:12px 10px}}
+</style>
+</head>
+<body>
+<div id="petals"></div>
+
+<div class="hero">
+ <div class="frame">
+  <div class="om fi">🕉️</div>
+  <p class="bless fi d1">|| श्री गजानन प्रसन्न || &nbsp; || एक तुही निरंकार ||<br>|| आशिर्वाद ||<br>प.पू. सद्गुरु माता सुदीक्षा सविंदर हरदेवजी महाराज यांच्या कृपेने<br>स.न.वि.वि. आमच्या येथे श्री कृपेने</p>
+  <div class="div fi d1"><i></i>✦<i></i></div>
+
+  <span class="nm fi d2">चि. कल्पेश</span>
+  <p class="fam fi d2">श्री. गणेश खंडु मधे<br>रा. धामणीचीवाडी ता. इगतपुरी जि. नाशिक<br>ह.मु. कल्याण, जि. ठाणे यांचे जेष्ठ सुपुत्र<br>श्री. संतोष भाऊसाहेब मोहोंडुळे<br>रा. राजुर, ता. अकोले, जि. अहिल्यानगर यांचे भाचे</p>
+
+  <div class="div fi d3"><i></i>🌸<i></i></div>
+
+  <span class="nm fi d3">चि. सौ. कां. नम्रता</span>
+  <p class="fam fi d3">कै. एकनाथ नारायण शेंगाळ यांची नात<br>श्री. भरत एकनाथ शेंगाळ<br>यांची जेष्ठ कन्या<br>रा. शेंगाळवाडी, इगतपुरी,<br>जि. नाशिक<br>यांचा</p>
+
+  <div class="div fi d4"><i></i>✦<i></i></div>
+  <div class="sv fi d4">शुभ विवाह</div>
+ </div>
+</div>
+
+<section><div class="card">
+ <p class="txt">मिती कार्तिक-मार्गशीर्ष शके १९४८ शुक्रवार दिनांक <b>१८-१२-२०२६</b> रोजी दुपारी <b>२.५३ वाजता</b> शुभ-मुहूर्तावर करण्याचे योजिले आहे तरी आपण आपल्या सहपरिवार, मित्र मंडळी सह उपस्थित राहून वधू-वरास शुभ आशिर्वाद द्यावे ही नम्र विनंती.</p>
+ <p class="shl">प्रथम पुजावा श्री गणपती। धन्य ती भारतीय संस्कृती ।। ज्ञानेश्वराने चालवल्या भिंती। अर्जुनाच्या रथावर श्रीकृष्ण सारथी ।।<br>सर्व काही ईश्वराच्या हाती । तोच जुळवितो नाती - गोती ।। वधु-वरास आशिर्वाद द्यावेत हीच आमची नम्र विनंती ।।</p>
+</div></section>
+
+<section><div class="card">
+ <p class="ttl">लग्नाला किती दिवस बाकी?</p>
+ <div class="cd">
+  <div class="cb"><span id="d">--</span><small>दिवस</small></div>
+  <div class="cb"><span id="h">--</span><small>तास</small></div>
+  <div class="cb"><span id="m">--</span><small>मिनिटे</small></div>
+  <div class="cb"><span id="s">--</span><small>सेकंद</small></div>
+ </div>
+</div></section>
+
+<section><div class="card">
+ <p class="ttl">कार्यक्रम</p>
+ <div class="grid">
+  <div class="ev"><div class="ic">💍</div><h3>✦ साखरपुडा समारंभ ✦</h3>बुधवार दि. <b>१६-१२-२०२६</b> रोजी<br><b>सकाळी ११.०० वाजता</b><br>शेंगाळवाडी, इगतपुरी, जि. नाशिक</div>
+  <div class="ev"><div class="ic">🥁</div><h3>✦ मांडव कार्यक्रम ✦</h3>गुरुवार दि. <b>१७-१२-२०२६</b> रोजी<br><b>सकाळी ९.०० वा.</b><br>(विवाहस्थळी, अनुसया लॉन्स)</div>
+  <div class="ev"><div class="ic">💛</div><h3>✦ हळदी समारंभ ✦</h3>गुरुवार दि. <b>१७-१२-२०२६</b> रोजी<br><b>सकाळी ११.०० वा.</b><br>(विवाहस्थळी, अनुसया लॉन्स)</div>
+  <div class="ev"><div class="ic">🌸</div><h3>✦ शुभ विवाह ✦</h3>शुक्रवार दि. <b>१८-१२-२०२६</b> रोजी<br><b>दुपारी २.५३ वाजता</b><br>(विवाहस्थळी, अनुसया लॉन्स)</div>
+ </div>
+ <p class="tip">✦ टीप ✦<br>संत निरंकारी सत्संग १७-१२-२६ रोजी सायं ५ ते ७ वाजता या वेळेस विवाहस्थळी संपन्न होईल.</p>
+</div></section>
+
+<section><div class="card">
+ <p class="ttl">विवाहस्थळ</p>
+ <div class="ic">📍</div>
+ <p class="vn">अनुसया लॉन्स व मंगल कार्यालय</p>
+ <p class="txt">घोटी-सिन्नर हायवे, बेलगाव तऱ्हाळे,<br>लक्ष्मी कुबेर हॉटेल समोर,<br>ता. इगतपुरी, जि. नाशिक</p>
+ <a class="btn" href="https://www.google.com/maps/search/अनुसया+लॉन्स+मंगल+कार्यालय+घोटी+सिन्नर+हायवे+बेलगाव+तऱ्हाळे+इगतपुरी+नाशिक" target="_blank" rel="noopener">🗺️ गूगल मॅप्स वर पहा</a>
+</div></section>
+
+<section style="padding-bottom:60px"><div class="card">
+ <p class="ttl">निमंत्रक</p>
+ <p class="host">श्री. गणेश खंडु मधे<br>मो.नं. <a href="tel:+918108579191">८१०८५७९१९१</a> / <a href="tel:+917977378849">७९७७३७८८४९</a><br>चि. संदिप रामदास मधे<br>मो.नं. <a href="tel:+917028453858">७०२८४५३८५८</a><br><b style="font-size:1.15em">समस्त मधे परिवार</b></p>
+</div></section>
+
+<script>
+var pc=document.getElementById('petals');
+for(var i=0;i<22;i++){var p=document.createElement('div'),z=6+Math.random()*10;p.className='petal';p.style.cssText='left:'+Math.random()*100+'vw;width:'+z+'px;height:'+z+'px;animation-duration:'+(7+Math.random()*10)+'s;animation-delay:'+Math.random()*14+'s;opacity:'+(.3+Math.random()*.4);pc.appendChild(p)}
+var T=new Date('2026-12-18T14:53:00+05:30');
+function tick(){var x=Math.max(0,T-new Date()),v=[x/864e5,x%864e5/36e5,x%36e5/6e4,x%6e4/1e3];['d','h','m','s'].forEach(function(k,j){document.getElementById(k).textContent=String(Math.floor(v[j])).padStart(2,'0')})}
+tick();setInterval(tick,1000);
+var o=new IntersectionObserver(function(e){e.forEach(function(r){r.isIntersecting&&r.target.classList.add('on')})},{threshold:.12});
+document.querySelectorAll('.card').forEach(function(c){o.observe(c)});
+</script>
+</body>
+</html>
